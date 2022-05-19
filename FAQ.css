@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Montserrat", sans-serif;
+  --main-color: #f44b01;
+  --font-color: #fafafa;
+}
+
+body {
+  font-family: "Montserrat" !important;
+}
+
+.wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgba(242, 56, 0, 1) 0%,
+    rgba(247, 129, 2, 1) 100%
+  );
+}
+.col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.col1 .title {
+  font-size: 100px;
+  color: #fafafa;
+}
+.col1 h2 {
+  color: #fafafa;
+  font-size: 30px;
+}
+
+.col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerImage img {
+  height: auto;
+  width: 80%;
+}
+/* FAQ section */
+.Faq h1 {
+  margin-top: 20px;
+  color: rgba(247, 129, 2, 1) !important;
+  font-weight: bold;
+}
+.accordion {
+  margin-top: 30px;
+}
+.accordion-button:not(.collapsed) {
+  color: #fafafa !important;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(242, 56, 0, 1) 0%,
+    rgba(247, 129, 2, 1) 100%
+  ) !important;
+}
+.accordion-button {
+  font-size: 1.5rem !important;
+  color: #000 !important;
+  background-color: #fafafa !important;
+}
+.accordion-button:focus {
+  border-color: rgba(247, 129, 2, 1) !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-body {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+  .bannerImage img {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+  .col1 .title {
+    font-size: 30px;
+  }
+  .col2 {
+    display: none;
+  }
+  .Faq h1 {
+    font-size: 30px !important;
+  }
+  .accordion-button:not(.collapsed) {
+    font-size: 1rem;
+  }
+  .accordion-button {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .col2 {
+    display: none;
+  }
+  .col1 .title {
+    font-size: 30px;
+  }
+  .col h2 {
+    font-size: 16px;
+  }
+  .Faq h1 {
+    font-size: 16px;
+  }
+  .accordion-button:not(.collapsed) {
+    font-size: 1rem;
+  }
+  .accordion-button {
+    font-size: 1rem !important;
+  }
+}

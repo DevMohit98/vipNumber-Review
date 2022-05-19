@@ -37,14 +37,6 @@ body {
   color: #fafafa;
   font-size: 20px;
 }
-.col1 .btn,
-.col3 .btn {
-  width: 20vw;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  border-radius: 10px;
-}
 
 .col2 {
   display: flex;
