@@ -45,13 +45,18 @@ body {
 }
 .bannerImage img {
   height: auto;
-  width: 80%;
+  width: 67%;
 }
 /* FAQ section */
 .Faq h1 {
   margin-top: 20px;
-  color: rgba(247, 129, 2, 1) !important;
-  font-weight: bold;
+  color: #000 !important;
+}
+.Faq h1 .fa-solid {
+  color: rgba(242, 56, 0, 1);
+}
+.Faq h1 span {
+  margin-left: 10px;
 }
 .accordion {
   margin-top: 30px;
@@ -69,6 +74,7 @@ body {
   font-size: 1.5rem !important;
   color: #000 !important;
   background-color: #fafafa !important;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
 .accordion-button:focus {
   border-color: rgba(247, 129, 2, 1) !important;
@@ -76,12 +82,39 @@ body {
   border-bottom: none !important;
   border-left: none !important;
 }
-.accordion-button::after {
-  display: none;
-}
+
 .accordion-body {
   font-size: 1rem;
   font-weight: 500;
+}
+.accordion-item {
+  margin: 15px;
+  border: 2px solid #e6e6e6 !important;
+}
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-item h2 button .fa {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+  -ms-transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) rotate(-180deg);
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3 all ease;
+}
+.accordion-item h2 button.collapsed .fa {
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: rgba(242, 56, 0, 1);
 }
 
 @media screen and (min-width: 786px) and (max-width: 992px) {
