@@ -88,8 +88,9 @@ body {
   font-weight: 500;
 }
 .accordion-item {
-  margin: 15px;
-  border: 2px solid #e6e6e6 !important;
+  margin-top: 17px;
+  border: 2px solid #f5f5f5 !important;
+  border-radius: 10px;
 }
 .accordion-button:not(.collapsed)::after {
   display: none;
@@ -124,6 +125,9 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 10px 10px;
+  }
+  .col2 {
+    display: none;
   }
   .bannerImage img {
     display: none;

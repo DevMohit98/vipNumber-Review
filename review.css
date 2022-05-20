@@ -177,6 +177,9 @@ body {
     flex-direction: column;
     padding: 20px 20px;
   }
+  .col2 {
+    display: none;
+  }
   .bannerImage img {
     display: none;
   }
@@ -204,12 +207,16 @@ body {
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .col1 {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px 20px;
   }
   .col1 .title {
     font-size: 30px;
+  }
+  .col2 {
+    display: none;
   }
   .bannerImage img {
     display: none;
