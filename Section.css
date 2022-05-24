@@ -42,8 +42,8 @@
   justify-content: center;
 }
 .trust-image img {
-  width: 70%;
-  height: 100%;
+  width: 100%;
+  height: 30%;
 }
 /* testimonail section */
 .testimonial .testimonial-title {
