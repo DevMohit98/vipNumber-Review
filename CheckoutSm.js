@@ -1,4 +1,4 @@
-const checkout = [
+const checkoutSm = [
   {
     image: "./Assests/Ready2Port.png",
     number: "8819227271",
@@ -25,10 +25,10 @@ const checkout = [
     price: 100,
   },
 ];
-let data = document.querySelector(".data");
-const Amount = document.querySelector(".amount");
-const total = document.querySelector(".total");
-let newdata = checkout.map((items) => {
+let dataSm = document.querySelector(".data-sm");
+const AmountSm = document.querySelector(".amount-sm");
+const totalSm = document.querySelector(".total-sm");
+let newdataSm = checkoutSm.map((items) => {
   const { image, number, price } = items;
 
   return ` 
@@ -44,12 +44,11 @@ let newdata = checkout.map((items) => {
                   </div>
   `;
 });
-newdata = newdata.join("");
-console.log(newdata);
-data.innerHTML = newdata;
+newdataSm = newdataSm.join("");
+dataSm.innerHTML = newdataSm;
 /* function to get total price */
-const sum = checkout.reduce((accumulator, object) => {
+const sumSm = checkoutSm.reduce((accumulator, object) => {
   return accumulator + object.price;
 }, 0);
-Amount.innerHTML = `₹ ${sum}`;
-total.innerHTML = sum;
+AmountSm.innerHTML = `₹ ${sumSm}`;
+totalSm.innerHTML = sumSm;
