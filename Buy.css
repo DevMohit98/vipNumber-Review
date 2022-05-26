@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.trust-title {
+  color: #f44b01;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.trust-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+.trust-image img {
+  width: 25vw;
+  height: auto;
+}
+.languageChange {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 8vw;
+}
+.languageChange .btn-primary {
+  border-color: #f44b01;
+  background-color: #f44b01;
+}
+.languageChange .btn {
+  color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.languageChange .btn-primary:hover {
+  border-color: #f44b01;
+  background-color: #f44b01;
+}
+.languageChange .btn-primary:focus {
+  box-shadow: none;
+  background-color: #f44b01;
+}
+.trust-details p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .trust-title {
+    font-size: 1.5rem !important;
+  }
+  .trust-image img {
+    width: 30vw;
+    height: auto;
+  }
+  .trust-details p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .trust-title {
+    font-size: 1.5rem !important;
+  }
+  .languageChange {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .languageChange .btn-primary {
+    width: 30vw;
+    height: auto;
+  }
+  .trust-details p {
+    font-size: 1rem;
+  }
+  .trust-image img {
+    width: 35vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .trust-title {
+    font-size: 1.5rem !important;
+  }
+  .languageChange {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .languageChange .btn-primary {
+    width: 30vw;
+    height: auto;
+  }
+  .trust-details p {
+    font-size: 1rem;
+  }
+  .trust-image img {
+    width: 30vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .trust-title {
+    font-size: 1rem !important;
+  }
+  .languageChange {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .languageChange .btn-primary {
+    width: 30vw;
+    height: auto;
+  }
+  .trust-details p {
+    font-size: 0.8rem;
+  }
+  .trust-image img {
+    width: 40vw;
+    height: auto;
+  }
+}
