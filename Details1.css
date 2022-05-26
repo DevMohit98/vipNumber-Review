@@ -110,15 +110,15 @@ body {
 }
 .carousel-control-prev {
   background-color: #f44b01 !important;
-  width: 70px !important;
-  height: 70px !important;
+  width: 40px !important;
+  height: 40px !important;
   left: 90% !important;
-  top: 50px;
 }
 .carousel-control-next {
   background-color: #f44b01 !important;
-  width: 70px !important;
-  height: 70px !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 40px;
 }
 @media screen and (max-width: 992px) {
   .number-card {
@@ -134,23 +134,21 @@ body {
   .detial-title {
     font-size: 1.4rem;
   }
-}
-@media screen and (min-width: 786px) and(max-width:992px) {
-  .number-card {
-    width: 50vw;
-    height: auto;
+  .carousel-inner .number-card {
+    width: 40vw;
   }
-  .number-card .price {
-    font-size: 1.4rem;
+  .carousel-control-prev {
+    left: 80% !important;
+    margin-bottom: 20px !important;
   }
-  .number-card .number {
-    font-size: 1.8rem;
+  .carousel-control-next {
+    margin-bottom: 20px !important;
   }
-  .detial-title {
-    font-size: 1.4rem;
+  .carousel-inner .number-card {
+    width: 40vw;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 786px) {
+@media screen and (min-width: 786px) and (max-width: 992px) {
   .number-card {
     width: 50vw;
     height: auto;
@@ -165,7 +163,45 @@ body {
     font-size: 1.4rem;
   }
   .carousel-inner .number-card {
-    width: 30vw;
+    width: 40vw;
+  }
+  .carousel-control-prev {
+    left: 80% !important;
+    margin-top: 20px !important;
+  }
+  .carousel-control-next {
+    margin-top: 20px !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .number-card {
+    width: 70vw;
+    height: auto;
+  }
+  .number-card .price {
+    font-size: 1.4rem;
+  }
+  .number-card .number {
+    font-size: 1.8rem;
+  }
+  .detial-title {
+    font-size: 1.4rem;
+  }
+  .carousel-inner .number-card {
+    width: 40vw;
+  }
+  .carousel-control-prev {
+    left: 75% !important;
+    margin-bottom: 10px !important;
+  }
+  .carousel-control-next {
+    margin-bottom: 10px !important;
+  }
+  .card-Carousel .title {
+    font-size: 2rem !important;
+  }
+  .other-details h2 {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -181,5 +217,36 @@ body {
   }
   .detial-title {
     font-size: 1.4rem;
+  }
+  .carousel-inner .number-card {
+    width: 10vw;
+  }
+  .other-details h2 {
+    font-size: 1rem;
+  }
+  .carousel-control-prev {
+    left: 35% !important;
+    margin-bottom: 20px !important;
+    top: 42px !important;
+  }
+  .carousel-control-next {
+    margin-bottom: 20px !important;
+    left: 50%;
+    top: 42px !important;
+  }
+  .carousel-inner .number-card {
+    width: 90vw;
+  }
+  .card-Carousel .title {
+    font-size: 1rem !important;
+  }
+  .carousel-inner .col-6:nth-child(2) {
+    display: none;
+  }
+  .card-Carousel .title {
+    font-size: 1.5rem !important;
+  }
+  .carousel-inner {
+    margin-top: 70px;
   }
 }
