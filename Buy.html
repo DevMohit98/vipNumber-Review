@@ -143,5 +143,41 @@
              </p>`;
       }
     </script>
+    <script>
+      let HindiSm = document.querySelector(".hindi-sm");
+      let EnglishSm = document.querySelector(".english-sm");
+      let titleSm = document.querySelector(".trust-title-sm");
+      let paraSm = document.querySelector(".trust-details-sm");
+      EnglishSm.addEventListener("click", ChangeToEnglishSm);
+      HindiSm.addEventListener("click", ChangeToHindiSm);
+      function ChangeToEnglishSm() {
+        titleSm.innerHTML = `Have Any Trust Issue <span class="fa-solid fa-circle-question"></span>`;
+        paraSm.innerHTML = `<p>
+               VIP NUMBER STORE is known across India as a company that provides
+               valuable and high quality services since 2010. For eight years we
+               have successfully sold over 10,000+ number to our customers in
+               India and have never stopped our self from serving efficiently. If
+               you want to buy your favorite mobile number or a fancy number of
+               your choice, VIP Number Store is the best brand offering such
+               service at the most affordable rates in the country.
+             </p>
+             <p>
+               Our success and achievements could be determined by the long-term
+               relations that we have with numerous VIP's in India, who have
+               happily taken fancy, extraordinary looking numbers from us.
+             </p>`;
+      }
+      function ChangeToHindiSm() {
+        titleSm.innerHTML = `कोई विश्वास मुद्दा है <span class="fa-solid fa-circle-question"></span>`;
+        paraSm.innerHTML = `<p> वीआईपी नंबर स्टोर पूरे भारत में एक ऐसी कंपनी के रूप में जानी जाती है जो प्रदान करती है   2010 से मूल्यवान और उच्च गुणवत्ता वाली सेवाएं। आठ वर्षों के लिए हम
+               में हमारे ग्राहकों को 10,000+ से अधिक नंबर सफलतापूर्वक बेचे हैं  भारत और कभी भी अपने आप को कुशलता से सेवा करने से नहीं रोका। यदि
+               आप अपना पसंदीदा मोबाइल नंबर या फैंसी नंबर खरीदना चाहते हैं
+               आपकी पसंद, VIP नंबर स्टोर सबसे अच्छा ब्रांड ऑफरिंग है जैसे
+               देश में सबसे सस्ती दरों पर सेवा।</p> <p>
+                 हमारी सफलता और उपलब्धियों को दीर्घावधि द्वारा निर्धारित किया जा सकता है
+               भारत में कई वीआईपी के साथ हमारे संबंध हैं, जिनके पास है
+               हमसे खुशी-खुशी फैंसी, असाधारण दिखने वाली संख्याएँ ली गईं।</p>`;
+      }
+    </script>
   </body>
 </html>
