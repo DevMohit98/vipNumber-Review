@@ -42,6 +42,7 @@ let newdataSm = checkoutSm.map((items) => {
                     <h2 class="checkOut-Number">${number}</h2>
                     <h2 class="number-price">${price}</h2>
                   </div>
+                    <hr style="color: e6e6e6" />
   `;
 });
 newdataSm = newdataSm.join("");
