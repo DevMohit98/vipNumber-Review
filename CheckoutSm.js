@@ -27,6 +27,7 @@ let newdataSm = checkoutSm.map((items) => {
   const { number, price } = items;
 
   return ` 
+  <div>
    <img
                   src="./Assests/Ready2Port.png"
                   alt="ready2port"
@@ -38,6 +39,7 @@ let newdataSm = checkoutSm.map((items) => {
                     <h2 class="number-price">${price}</h2>
                   </div>
                     <hr style="color: e6e6e6" />
+                    </div>
   `;
 });
 newdataSm = newdataSm.join("");
