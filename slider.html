@@ -13,8 +13,6 @@
   </head>
   <body>
     <!-- This block can be reused as many times as needed -->
-    <input type="number" name="low-value" class="low-value" />
-    <input type="number" name="high-value" class="high-value" />
     <section class="range-slider">
       <span class="rangeValues"></span>
       <input value="5" min="0" max="15" step="0.5" type="range" />
@@ -22,14 +20,12 @@
     </section>
   </body>
   <script>
-    let lowValue = document.querySelector(".low-value");
-    let highvalue = document.querySelector(".high-value");
     function getVals() {
       // Get slider values
       var parent = this.parentNode;
       var slides = parent.getElementsByTagName("input");
-      var slide1 = parseFloat(highvalue.value);
-      var slide2 = parseFloat(lowValue.value);
+      var slide1 = parseFloat("value to insert");
+      var slide2 = parseFloat("value to insert");
 
       // Neither slider will clip the other, so make sure we determine which is larger
       if (slide1 > slide2) {
