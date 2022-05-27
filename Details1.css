@@ -54,7 +54,7 @@ body {
 }
 .other-details h2 {
   margin-bottom: 0rem !important;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
 }
 .other-details h2:nth-child(2) {
@@ -112,7 +112,7 @@ body {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  left: 90% !important;
+  left: 85% !important;
 }
 .carousel-control-next {
   background-color: #f44b01 !important;
