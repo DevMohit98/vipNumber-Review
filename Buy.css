@@ -50,6 +50,77 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
 }
+/* testimonial section */
+.testimonial-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.testimonial-title {
+  text-align: center;
+  color: #f44b01;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.testimonial-image img {
+  width: 30vh;
+  height: auto;
+}
+/* testimonial card */
+.back {
+  width: auto;
+  height: auto;
+  background-color: #fafafa;
+  border: 5px solid #f44b01;
+}
+.ReviewByUser {
+  display: flex;
+  flex-direction: row;
+}
+.ReviewByUser .user-image img {
+  width: 50px;
+  height: 50px;
+}
+.ReviewByUser h1 {
+  margin-bottom: 3px !important;
+}
+.ReviewByUser .userName {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #140e38;
+}
+.user .stars .fa-solid {
+  color: rgb(255, 215, 0);
+}
+.back .user-review {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+}
+.back p {
+  margin-bottom: 0px !important;
+}
+.carousel-inner {
+  position: static !important;
+}
+#carouselExampleControls {
+  position: static !important;
+}
+.carousel-control-prev {
+  background-color: #f44b01 !important;
+  width: 40px !important;
+  height: 40px !important;
+  left: 85% !important;
+}
+.carousel-control-next {
+  background-color: #f44b01 !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 40px;
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .trust-title {
     font-size: 1.5rem !important;
@@ -64,6 +135,16 @@
   }
   .trust-details p {
     font-size: 1rem;
+  }
+  .ReviewByUser .userName {
+    font-size: 0.8rem;
+  }
+  .ReviewByUser .user-image img {
+    width: 30px;
+    height: 30px;
+  }
+  .back .user-review {
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
@@ -89,6 +170,22 @@
     width: 35vw;
     height: auto;
   }
+  .testimonial-title {
+    font-size: 2rem !important;
+  }
+  .carousel-inner {
+    margin-top: 20px;
+  }
+  .back {
+    width: 30vw;
+    height: auto;
+  }
+  .carousel-control-prev {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    left: 75% !important;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .trust-title {
@@ -113,6 +210,34 @@
     width: 30vw;
     height: auto;
   }
+  .testimonial-title {
+    font-size: 2rem !important;
+  }
+  .back {
+    width: auto;
+    height: auto;
+  }
+  .carousel-control-prev {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    left: 75% !important;
+  }
+  .carousel-inner {
+    margin-top: 20px;
+  }
+  .back .user-review {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .ReviewByUser .user-image img {
+    width: 30px;
+    height: 30px;
+  }
+  .carousel-inner .col-4:nth-child(3) {
+    display: none;
+  }
 }
 @media screen and (max-width: 576px) {
   .trust-title {
@@ -136,5 +261,29 @@
   .trust-image img {
     width: 40vw;
     height: auto;
+  }
+  .testimonial-title {
+    font-size: 2rem !important;
+  }
+  .carousel-inner .col-4:nth-child(2),
+  .carousel-inner .col-4:nth-child(3) {
+    display: none;
+  }
+  .back {
+    width: auto;
+    height: auto;
+  }
+  .carousel-inner {
+    margin-top: 60px;
+  }
+  .carousel-control-prev {
+    left: 35% !important;
+    margin-bottom: 20px !important;
+    top: 42px !important;
+  }
+  .carousel-control-next {
+    margin-bottom: 20px !important;
+    left: 50%;
+    top: 42px !important;
   }
 }
