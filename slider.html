@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter Silder</title>
+    <link rel="stylesheet" href="./slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- This block can be reused as many times as needed -->
+    <input type="number" name="low-value" class="low-value" />
+    <input type="number" name="high-value" class="high-value" />
+    <section class="range-slider">
+      <span class="rangeValues"></span>
+      <input value="5" min="0" max="15" step="0.5" type="range" />
+      <input value="10" min="0" max="15" step="0.5" type="range" />
+    </section>
+  </body>
+  <script>
+    let lowValue = document.querySelector(".low-value");
+    let highvalue = document.querySelector(".high-value");
+    function getVals() {
+      // Get slider values
+      var parent = this.parentNode;
+      var slides = parent.getElementsByTagName("input");
+      var slide1 = parseFloat(highvalue.value);
+      var slide2 = parseFloat(lowValue.value);
+
+      // Neither slider will clip the other, so make sure we determine which is larger
+      if (slide1 > slide2) {
+        var tmp = slide2;
+        slide2 = slide1;
+        slide1 = tmp;
+      }
+
+      var displayElement = parent.getElementsByClassName("rangeValues")[0];
+      displayElement.innerHTML = slide1 + " - " + slide2;
+    }
+
+    window.onload = function () {
+      // Initialize Sliders
+      var sliderSections = document.getElementsByClassName("range-slider");
+      for (var x = 0; x < sliderSections.length; x++) {
+        var sliders = sliderSections[x].getElementsByTagName("input");
+        for (var y = 0; y < sliders.length; y++) {
+          if (sliders[y].type === "range") {
+            sliders[y].oninput = getVals;
+            // Manually trigger event first time to display values
+            sliders[y].oninput();
+          }
+        }
+      }
+    };
+    section.range - slid;
+  </script>
+</html>
