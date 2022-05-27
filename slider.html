@@ -24,8 +24,8 @@
       // Get slider values
       var parent = this.parentNode;
       var slides = parent.getElementsByTagName("input");
-      var slide1 = parseFloat("value to insert");
-      var slide2 = parseFloat("value to insert");
+      var slide1 = parseFloat(slides[0].value);
+      var slide2 = parseFloat(slides[1].value);
 
       // Neither slider will clip the other, so make sure we determine which is larger
       if (slide1 > slide2) {
