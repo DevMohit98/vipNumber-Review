@@ -1,26 +1,21 @@
 const checkoutSm = [
   {
-    image: "./Assests/Ready2Port.png",
     number: "8819227271",
     price: 700,
   },
   {
-    image: "./Assests/Ready2Port.png",
     number: "8192256371",
     price: 700,
   },
   {
-    image: "./Assests/Ready2Port.png",
     number: "8819226431",
     price: 124,
   },
   {
-    image: "./Assests/Ready2Port.png",
     number: "0001256242",
     price: 300,
   },
   {
-    image: "./Assests/Ready2Port.png",
     number: "0001256242",
     price: 100,
   },
@@ -29,11 +24,11 @@ let dataSm = document.querySelector(".data-sm");
 const AmountSm = document.querySelector(".amount-sm");
 const totalSm = document.querySelector(".total-sm");
 let newdataSm = checkoutSm.map((items) => {
-  const { image, number, price } = items;
+  const { number, price } = items;
 
   return ` 
    <img
-                  src="${image}"
+                  src="./Assests/Ready2Port.png"
                   alt="ready2port"
                   width="60"
                   height="30"
