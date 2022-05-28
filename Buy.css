@@ -109,11 +109,15 @@
 #carouselExampleControls {
   position: static !important;
 }
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 100% !important;
+}
 .carousel-control-prev {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  left: 85% !important;
+  left: 90% !important;
 }
 .carousel-control-next {
   background-color: #f44b01 !important;
@@ -140,8 +144,8 @@
     font-size: 0.8rem;
   }
   .ReviewByUser .user-image img {
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: auto;
   }
   .back .user-review {
     font-size: 0.7rem;
@@ -177,14 +181,22 @@
     margin-top: 20px;
   }
   .back {
-    width: 30vw;
+    width: auto;
     height: auto;
   }
   .carousel-control-prev {
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    left: 75% !important;
+    left: 85% !important;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -52px !important;
+    opacity: 100% !important;
+  }
+  .carousel-inner .col-4:nth-child(3) {
+    display: none;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
@@ -221,7 +233,7 @@
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    left: 75% !important;
+    left: 80% !important;
   }
   .carousel-inner {
     margin-top: 20px;
@@ -235,8 +247,13 @@
     width: 30px;
     height: 30px;
   }
-  .carousel-inner .col-4:nth-child(3) {
+  .carousel-inner .col-sm-6:nth-child(3) {
     display: none;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -52px !important;
+    opacity: 100% !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -265,8 +282,8 @@
   .testimonial-title {
     font-size: 2rem !important;
   }
-  .carousel-inner .col-4:nth-child(2),
-  .carousel-inner .col-4:nth-child(3) {
+  .carousel-inner .col-12:nth-child(2),
+  .carousel-inner .col-12:nth-child(3) {
     display: none;
   }
   .back {
@@ -277,13 +294,15 @@
     margin-top: 60px;
   }
   .carousel-control-prev {
-    left: 35% !important;
-    margin-bottom: 20px !important;
-    top: 42px !important;
+    left: 40% !important;
+    top: 5px !important;
   }
   .carousel-control-next {
-    margin-bottom: 20px !important;
-    left: 50%;
-    top: 42px !important;
+    left: 60%;
+    top: 5px !important;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    opacity: 100% !important;
   }
 }
