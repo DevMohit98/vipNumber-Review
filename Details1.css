@@ -207,6 +207,18 @@ body {
   .carousel-inner .number-card {
     width: auto;
   }
+  .carousel-inner .number-card .number {
+    font-size: 20px;
+  }
+  .carousel-inner .number-card .other-details h2 {
+    font-size: 9px;
+  }
+  .carousel-inner .number-card .btn-primary {
+    font-size: 12px;
+  }
+  .carousel-inner .number-card .price {
+    font-size: 1rem;
+  }
   .other-details h2 {
     font-size: 1rem;
   }
@@ -222,9 +234,7 @@ body {
   .card-Carousel .title {
     font-size: 1rem !important;
   }
-  .carousel-inner .col-12:nth-child(2) {
-    display: none;
-  }
+
   .card-Carousel .title {
     font-size: 1.5rem !important;
   }
