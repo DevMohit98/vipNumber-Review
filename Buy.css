@@ -123,7 +123,7 @@
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  margin-right: 15px;
+  right: 15%;
 }
 @media screen and (min-width: 992px) and (max-width: 1100px) {
   .trust-title {
@@ -194,7 +194,7 @@
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    margin-right: 10px;
+    right: 3%;
   }
   #carouselExampleControls-Mobile .carousel-control-next,
   #carouselExampleControls-Mobile .carousel-control-prev {
@@ -245,7 +245,7 @@
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    margin-right: 10px;
+    right: 0%;
   }
   .carousel-inner {
     margin-top: 20px;
@@ -326,7 +326,7 @@
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    margin-right: 40px;
+    right: 15%;
   }
   #carouselExampleControls-Mobile .carousel-control-next,
   #carouselExampleControls-Mobile .carousel-control-prev {
