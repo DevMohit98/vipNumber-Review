@@ -103,29 +103,29 @@
 .back p {
   margin-bottom: 0px !important;
 }
-.carousel-inner {
+#carouselExampleControls-Desktop .carousel-inner {
   position: static !important;
 }
-#carouselExampleControls {
+#carouselExampleControls-Desktop {
   position: static !important;
 }
-.carousel-control-next,
-.carousel-control-prev {
+#carouselExampleControls-Desktop .carousel-control-next,
+#carouselExampleControls-Desktop .carousel-control-prev {
   opacity: 100% !important;
 }
-.carousel-control-prev {
+#carouselExampleControls-Desktop .carousel-control-prev {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
   left: 90% !important;
 }
-.carousel-control-next {
+#carouselExampleControls-Desktop .carousel-control-next {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  margin-right: 40px;
+  margin-right: 15px;
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1100px) {
   .trust-title {
     font-size: 1.5rem !important;
   }
@@ -184,15 +184,21 @@
     width: auto;
     height: auto;
   }
-  .carousel-control-prev {
+  #carouselExampleControls-Mobile .carousel-control-prev {
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
     left: 85% !important;
   }
-  .carousel-control-next,
-  .carousel-control-prev {
-    top: -52px !important;
+  #carouselExampleControls-Mobile .carousel-control-next {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px;
+  }
+  #carouselExampleControls-Mobile .carousel-control-next,
+  #carouselExampleControls-Mobile .carousel-control-prev {
+    top: -62px !important;
     opacity: 100% !important;
   }
   .carousel-inner .col-4:nth-child(3) {
@@ -229,11 +235,17 @@
     width: auto;
     height: auto;
   }
-  .carousel-control-prev {
+  #carouselExampleControls-Mobile .carousel-control-prev {
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
     left: 80% !important;
+  }
+  #carouselExampleControls-Mobile .carousel-control-next {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px;
   }
   .carousel-inner {
     margin-top: 20px;
@@ -247,12 +259,12 @@
     width: 30px;
     height: 30px;
   }
-  .carousel-inner .col-sm-6:nth-child(3) {
+  #carouselExampleControls-Mobile .carousel-inner .col-sm-6:nth-child(3) {
     display: none;
   }
-  .carousel-control-next,
-  .carousel-control-prev {
-    top: -52px !important;
+  #carouselExampleControls-Mobile .carousel-control-next,
+  #carouselExampleControls-Mobile .carousel-control-prev {
+    top: -62px !important;
     opacity: 100% !important;
   }
 }
@@ -282,27 +294,42 @@
   .testimonial-title {
     font-size: 2rem !important;
   }
-  .carousel-inner .col-12:nth-child(2),
-  .carousel-inner .col-12:nth-child(3) {
+  #carouselExampleControls-Mobile .carousel-inner .col-12:nth-child(2) {
     display: none;
   }
   .back {
     width: auto;
     height: auto;
   }
-  .carousel-inner {
+  #carouselExampleControls-Mobile .carousel-inner {
     margin-top: 60px;
   }
-  .carousel-control-prev {
+  #carouselExampleControls-Mobile .carousel-control-prev {
     left: 40% !important;
     top: 5px !important;
   }
-  .carousel-control-next {
+  #carouselExampleControls-Mobile .carousel-control-next {
     left: 60%;
     top: 5px !important;
   }
-  .carousel-control-next,
-  .carousel-control-prev {
+  #carouselExampleControls-Mobile .carousel-control-next,
+  #carouselExampleControls-Mobile .carousel-control-prev {
     opacity: 100% !important;
+  }
+  #carouselExampleControls-Mobile .carousel-control-prev {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    left: 40% !important;
+  }
+  #carouselExampleControls-Mobile .carousel-control-next {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 40px;
+  }
+  #carouselExampleControls-Mobile .carousel-control-next,
+  #carouselExampleControls-Mobile .carousel-control-prev {
+    top: -52px !important;
   }
 }
