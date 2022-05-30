@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.CartBg {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    60deg,
+    rgba(252, 241, 213, 1) 0%,
+    rgba(255, 194, 175, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.CartTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 3rem !important;
+}
+.CartTitle span {
+  color: #f44b01;
+}
+.CartBg .cart {
+  width: auto;
+  height: auto;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+.cart-details {
+  display: flex;
+  flex: row;
+}
+
+.cart-details h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0 !important;
+}
+.cart-details .btn-primary {
+  background-color: #fafafa !important;
+  border-color: #fafafa !important;
+}
+.cart-details .btn {
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 0 0 !important;
+}
+.cart-details .btn-primary:hover {
+  box-shadow: none !important;
+  color: #f44b01 !important;
+  border: none !important ;
+}
+.cart-details .btn-primary:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+.cart-details .number-type {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  margin-left: 50px;
+}
+.number-price {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+.OrderSummary .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+.details h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.OrderSummary .btn-primary {
+  background-color: #f44b01 !important;
+  border-color: #f44b01 !important;
+  color: #fafafa !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.OrderSummary .btn {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.OrderSummary .disclaimer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+.OrderSummary .disclaimer a {
+  text-decoration: none;
+  color: #f44b01;
+}
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .cart-buttons {
+    margin-left: 30px;
+  }
+  .Cart-Number {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .cart-buttons {
+    margin-left: 30px;
+  }
+  .Cart-Number,
+  .number-title {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Cart-Number {
+    margin-left: 20px;
+  }
+  .cart-buttons {
+    margin-left: 20px;
+  }
+  .CartBg .cart {
+    width: auto;
+    height: auto;
+  }
+  .CartTitle {
+    margin-bottom: 2rem !important;
+    font-size: 2.5rem !important;
+  }
+  .cart-details h2 {
+    font-size: 1.4rem !important;
+  }
+  .cart-details .number-type {
+    margin-left: 15px;
+    font-size: 0.8rem !important;
+  }
+}
