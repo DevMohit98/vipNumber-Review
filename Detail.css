@@ -83,6 +83,10 @@ body {
   border-color: #f44b01;
   color: #fafafa;
 }
+.number-card .btn-primary:hover {
+  background-color: #f44b01;
+  border: none !important;
+}
 .number-card .btn {
   text-transform: uppercase;
   color: #fafafa;
@@ -99,30 +103,37 @@ body {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
 }
-.carousel-inner .number-card {
+#carouselExampleControls-Details .carousel-inner .number-card {
   width: 23vw;
 }
-.carousel-inner {
+#carouselExampleControls-Details .carousel-inner {
   position: static !important;
 }
-#carouselExampleControls {
+#carouselExampleControls-Details {
   position: static !important;
 }
-.carousel-control-prev {
+#carouselExampleControls-Details .carousel-control-prev {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  left: 90% !important;
+  left: 85% !important;
 }
-.carousel-control-next {
+#carouselExampleControls-Details .carousel-control-next {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  margin-right: 40px;
+  right: 5%;
 }
-.carousel-control-next,
-.carousel-control-prev {
+#carouselExampleControls-Details .carousel-control-next,
+#carouselExampleControls-Details .carousel-control-prev {
   opacity: 100% !important;
+}
+#carouselExampleControls-Details
+  .carousel-inner
+  .number-card
+  .btn-primary:hover {
+  background-color: #f44b01;
+  border: none !important;
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
   .number-card {
@@ -138,20 +149,25 @@ body {
   .detial-title {
     font-size: 1.4rem;
   }
-  .carousel-inner .number-card {
+  #carouselExampleControls-Details-Mobile .carousel-inner .number-card {
     width: auto;
   }
-  .carousel-control-prev {
-    left: 80% !important;
-    margin-top: 20px !important;
-  }
-  .carousel-control-next {
-    margin-top: 20px !important;
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-    top: -92px !important;
+  #carouselExampleControls-Details-Mobile .carousel-control-next,
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
     opacity: 100% !important;
+    top: -50px !important;
+  }
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    left: 85% !important;
+  }
+  #carouselExampleControls-Details-Mobile .carousel-control-next {
+    background-color: #f44b01 !important;
+    width: 40px !important;
+    height: 40px !important;
+    right: 2%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
@@ -168,14 +184,14 @@ body {
   .detial-title {
     font-size: 1.4rem;
   }
-  .carousel-inner .number-card {
+  #carouselExampleControls-Details-Mobile .carousel-inner .number-card {
     width: auto;
   }
-  .carousel-control-prev {
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
     left: 75% !important;
     margin-bottom: 10px !important;
   }
-  .carousel-control-next {
+  #carouselExampleControls-Details-Mobile .carousel-control-next {
     margin-bottom: 10px !important;
   }
   .card-Carousel .title {
@@ -184,10 +200,22 @@ body {
   .other-details h2 {
     font-size: 0.8rem;
   }
-  .carousel-control-next,
-  .carousel-control-prev {
-    top: -62px !important;
+  #carouselExampleControls-Details-Mobile .carousel-control-next,
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
+    top: -42px !important;
     opacity: 100% !important;
+  }
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
+    background-color: #f44b01 !important;
+    width: 30px !important;
+    height: 30px !important;
+    left: 80% !important;
+  }
+  #carouselExampleControls-Details-Mobile .carousel-control-next {
+    background-color: #f44b01 !important;
+    width: 30px !important;
+    height: 30px !important;
+    right: 5%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -204,46 +232,58 @@ body {
   .detial-title {
     font-size: 1.4rem;
   }
-  .carousel-inner .number-card {
+  #carouselExampleControls-Details-Mobile .carousel-inner .number-card {
     width: auto;
   }
-  .carousel-inner .number-card .number {
+  #carouselExampleControls-Details-Mobile .carousel-inner .number-card .number {
     font-size: 20px;
   }
-  .carousel-inner .number-card .other-details h2 {
-    font-size: 9px;
+  #carouselExampleControls-Details-Mobile
+    .carousel-inner
+    .number-card
+    .other-details
+    h2 {
+    font-size: 10px;
   }
-  .carousel-inner .number-card .btn-primary {
-    font-size: 12px;
+  #carouselExampleControls-Details-Mobile
+    .carousel-inner
+    .number-card
+    .btn-primary {
+    font-size: 13px;
   }
-  .carousel-inner .number-card .price {
+  #carouselExampleControls-Details-Mobile .carousel-inner .number-card .price {
     font-size: 1rem;
   }
   .other-details h2 {
     font-size: 1rem;
   }
-  .carousel-control-prev {
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
     left: 35% !important;
+    background-color: #f44b01 !important;
+    width: 30px !important;
+    height: 30px !important;
   }
-  .carousel-control-next {
+  #carouselExampleControls-Details-Mobile .carousel-control-next {
     left: 50%;
+    background-color: #f44b01 !important;
+    width: 30px !important;
+    height: 30px !important;
   }
-  .carousel-inner .number-card {
+  #carouselExampleControls-Details-Mobile .carousel-inner .number-card {
     width: auto;
   }
   .card-Carousel .title {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
-
-  .card-Carousel .title {
-    font-size: 1.5rem !important;
-  }
-  .carousel-inner {
+  #carouselExampleControls-Details-Mobile .carousel-inner {
     margin-top: 70px;
   }
-  .carousel-control-next,
-  .carousel-control-prev {
+  #carouselExampleControls-Details-Mobile .carousel-control-next,
+  #carouselExampleControls-Details-Mobile .carousel-control-prev {
     top: -52px !important;
     opacity: 100% !important;
+  }
+  #carouselExampleControls-Details-Mobile .number-card .Similar-link {
+    font-size: 12px;
   }
 }
