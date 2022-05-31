@@ -12,6 +12,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="d-none d-lg-block">
@@ -48,9 +55,40 @@
                         placeholder="enter your email address"
                       />
                     </div>
-                    <button class="btn btn-primary">Get OTP</button>
+                    <button class="otp btn btn-primary">Get OTP</button>
+                    <h3>Don't have account ? <a href="">Sign Up</a></h3>
                   </form>
-                  <h3>Don't have account ? <a href="">Sign Up</a></h3>
+                  <div class="otpScreen p-3 d-none">
+                    <i
+                      class="fa-solid fa-xmark d-flex justify-content-end"
+                      style="color: #f44b01; cursor: pointer"
+                    ></i>
+                    <h2 class="otp-title">Verify Details</h2>
+                    <h3>OTP sent to your mobile number.</h3>
+                    <div class="d-flex align-items-center flex-row">
+                      <h3 class="registered-Number">+91-9530000007</h3>
+                      <a
+                        href="#"
+                        style="margin-top: 12px; margin-left: 10px"
+                        class="EditNumber"
+                        >Edit</a
+                      >
+                    </div>
+                    <div class="d-flex flex-row">
+                      <input type="text" minlength="1" id="otp1" />
+                      <input type="text" minlength="1" id="otp2" />
+                      <input type="text" minlength="1" id="otp3" />
+                      <input type="text" minlength="1" id="otp4" />
+                    </div>
+                    <a href="#" class="resend-link">Resend OTP</a>
+                    <h2 class="message">
+                      - Make sure you entered correct mobile number
+                    </h2>
+                    <h2 class="message">
+                      -You can also
+                      <span><a href="#">Login with Password</a></span>
+                    </h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,7 +111,7 @@
                 email address
               </p>
             </div>
-            <form class="sign-form">
+            <form class="sign-form-mobile">
               <div class="mb-3">
                 <label for="Email" class="form-label">Email address</label>
                 <input
@@ -82,12 +120,151 @@
                   placeholder="enter your email address"
                 />
               </div>
-              <button class="btn btn-primary">Get OTP</button>
+              <button class="otpMobile btn btn-primary">Get OTP</button>
+              <h3>Don't have account ? <a href="">Sign Up</a></h3>
             </form>
-            <h3>Don't have account ? <a href="">Sign Up</a></h3>
+            <div class="otpScreen-Mobile p-3 d-none">
+              <i
+                class="fa-solid fa-xmark close d-flex justify-content-end"
+                style="color: #f44b01; cursor: pointer"
+              ></i>
+              <h2 class="otp-title">Verify Details</h2>
+              <h3>OTP sent to your mobile number.</h3>
+              <div class="d-flex align-items-center flex-row">
+                <h3 class="registered-Number-mobile" contenteditable="true">
+                  +91-9530000007
+                </h3>
+                <a
+                  href="#"
+                  style="margin-top: 12px; margin-left: 10px"
+                  class="Edit-mobile"
+                  >Edit</a
+                >
+              </div>
+
+              <div class="d-flex flex-row">
+                <input type="text" minlength="1" id="val1" />
+                <input type="text" minlength="1" id="val2" />
+                <input type="text" minlength="1" id="val3" />
+                <input type="text" minlength="1" id="val4" />
+              </div>
+              <a href="#" class="resend-link">Resend OTP</a>
+              <h2 class="message">
+                - Make sure you entered correct mobile number
+              </h2>
+              <h2 class="message">
+                -You can also
+                <span><a href="#">Login with Password</a></span>
+              </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      let btn = document.querySelector(".otp");
+      let form = document.querySelector(".sign-form");
+      let otpScreen = document.querySelector(".otpScreen");
+      let closeModal = document.querySelector(".fa-solid");
+      let edit = document.querySelector(".EditNumber");
+      let RegisterNumber = document.querySelector(".registered-Number");
+      let otp1 = document.getElementById("otp1");
+      let otp2 = document.getElementById("otp2");
+      let otp3 = document.getElementById("otp3");
+      let otp4 = document.getElementById("otp4");
+      otp1.addEventListener("input", getOtp);
+      otp2.addEventListener("input", getOtp);
+      otp3.addEventListener("input", getOtp);
+      otp4.addEventListener("input", getOtp);
+      let OTP;
+      edit.addEventListener("click", EditNumber);
+      edit.addEventListener("click", SaveNumber);
+      form.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+      btn.addEventListener("click", showOtpScreen);
+      closeModal.addEventListener("click", showForm);
+      function showOtpScreen() {
+        form.classList.add("hide");
+        if (otpScreen.classList.contains("d-none")) {
+          otpScreen.classList.remove("d-none");
+        }
+      }
+      function showForm() {
+        otpScreen.classList.add("d-none");
+        form.classList.remove("hide");
+      }
+      function EditNumber() {
+        RegisterNumber.setAttribute("contenteditable", "true");
+        edit.innerHTML = "save";
+      }
+      function SaveNumber() {
+        if ((edit.innerHTML = "save")) {
+          edit.addEventListener("click", function () {
+            RegisterNumber.removeAttribute("contenteditable");
+            edit.innerHTML = "edit";
+          });
+        }
+      }
+      function getOtp() {
+        OTP = parseInt(otp1.value + otp2.value + otp3.value + otp4.value);
+        console.log(OTP);
+      }
+    </script>
+    <!--script for mobile--->
+    <script>
+      let FomrMobile = document.querySelector(".sign-form-mobile");
+      let OtpMobileBtn = document.querySelector(".otpMobile");
+      let MobileForm = document.querySelector(".sign-form-mobile");
+      let OtpScreenMobile = document.querySelector(".otpScreen-Mobile");
+      let closeMobileModal = document.querySelector(".close");
+      let editMobile = document.querySelector(".Edit-mobile");
+      let val1 = document.getElementById("val1");
+      let val2 = document.getElementById("val2");
+      let val3 = document.getElementById("val3");
+      let val4 = document.getElementById("val4");
+      val1.addEventListener("input", getValue);
+      val2.addEventListener("input", getValue);
+      val3.addEventListener("input", getValue);
+      val4.addEventListener("input", getValue);
+      let otp;
+      let RegisterNumberMobile = document.querySelector(
+        ".registered-Number-mobile"
+      );
+      OtpMobileBtn.addEventListener("click", ShowOtpMobileScreen);
+      closeMobileModal.addEventListener("click", closeOtpMobileScreen);
+      editMobile.addEventListener("click", EditNumberMobile);
+      editMobile.addEventListener("click", SaveNumberMobile);
+      FomrMobile.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+      function ShowOtpMobileScreen() {
+        MobileForm.classList.add("hide");
+        if (OtpScreenMobile.classList.contains("d-none")) {
+          OtpScreenMobile.classList.remove("d-none");
+        }
+      }
+      function closeOtpMobileScreen() {
+        OtpScreenMobile.classList.add("d-none");
+        MobileForm.classList.remove("hide");
+      }
+      function EditNumberMobile() {
+        RegisterNumberMobile.setAttribute("contenteditable", "true");
+        editMobile.innerHTML = "save";
+      }
+      function SaveNumberMobile() {
+        if ((editMobile.innerHTML = "save")) {
+          editMobile.addEventListener("click", function () {
+            RegisterNumberMobile.removeAttribute("contenteditable");
+            editMobile.innerHTML = "edit";
+          });
+        }
+      }
+      function getValue() {
+        otp = parseInt(val1.value + val2.value + val3.value + val4.value);
+        console.log(otp);
+      }
+    </script>
+    <!--script for mobile end--->
   </body>
 </html>
