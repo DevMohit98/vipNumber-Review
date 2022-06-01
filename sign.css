@@ -146,6 +146,10 @@
   background-color: #e6e6e6;
   padding: 4px 4px;
 }
+.registered-Number-mobile[contenteditable="true"] {
+  background-color: #e6e6e6;
+  padding: 4px 4px;
+}
 
 @media screen and (max-width: 992px) {
   .sign-container {

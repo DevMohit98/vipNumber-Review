@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.chatButton,
+.chatButtonMobile {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #bf68e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.box,
+.boxMobile {
+  width: 20vw;
+  height: auto;
+  background-color: red;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.box .fa-solid,
+.boxMobile .fa-solid,
+.faqSection .fa-solid,
+.faqSectionMobile .fa-solid {
+  color: #bf68e6;
+  font-size: 20px;
+  cursor: pointer;
+}
+.box .btn-primary,
+.boxMobile .btn-primary {
+  background-color: #fff !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #bf68e6;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-radius: 0px !important;
+}
+.box .btn,
+.boxMobile .btn {
+  font-family: "Poppins", sans-serif;
+  color: #bf68e6;
+}
+.box .btn-primary:hover,
+.boxMobile .btn-primary:hover {
+  border-bottom: 2px solid #bf68e6;
+}
+.box .btn:hover,
+.boxMobile .btn:hover {
+  color: #bf68e6;
+}
+.box .btn-primary:focus,
+.boxMobile .btn-primary:focus {
+  box-shadow: none !important;
+  color: #bf68e6;
+}
+
+.box .btn-primary .fa-solid,
+.boxMobile .btn-primary .fa-solid {
+  color: #bf68e6;
+}
+.faqSection,
+.faqSectionMobile {
+  width: 20vw;
+  height: auto;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+.faqSection::-webkit-scrollbar,
+.faqSectionMobile::-webkit-scrollbar {
+  background-color: #fff;
+}
+.faqSection::-webkit-scrollbar-thumb,
+.faqSectionMobile::-webkit-scrollbar {
+  background-color: #fff;
+}
+.accordion-button,
+.faqSectionMobile .accordion-button {
+  background-color: #fff !important;
+  margin: 5px 5px;
+  font-size: 0.8rem !important;
+  font-family: "Poppins", sans-serif;
+}
+.accordion-button:focus,
+.faqSectionMobile .accordion-button:focus {
+  box-shadow: none !important;
+  color: #bf68e6 !important;
+}
+.accordion-body,
+.faqSectionMobile .accordion-body {
+  font-size: 0.8rem !important;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 992px) {
+  .boxMobile {
+    width: 30vw;
+    height: auto;
+  }
+  .faqSectionMobile {
+    width: 30vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .boxMobile {
+    width: 30vw;
+    height: auto;
+  }
+  .faqSectionMobile {
+    width: 30vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .boxMobile {
+    width: 40vw;
+    height: auto;
+  }
+  .faqSectionMobile {
+    width: 40vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .boxMobile {
+    width: 70vw;
+    height: auto;
+  }
+  .faqSectionMobile {
+    width: 70vw;
+    height: auto;
+  }
+}
