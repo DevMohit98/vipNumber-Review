@@ -15,8 +15,8 @@
 }
 .topLeft {
   width: 15vw;
-  height: 20vh;
-  border-radius: 10px;
+  height: 10vh;
+  border-radius: 1px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -39,10 +39,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .StepNumber {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Poppins", sans-serif;
   color: #fafafa;
   margin-bottom: 0 !important;
