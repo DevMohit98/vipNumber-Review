@@ -13,7 +13,6 @@
   height: auto;
   border-radius: 10px;
 }
-
 .topLeft,
 .topLeftMobile {
   width: 15vw;
@@ -95,63 +94,61 @@
   color: #bf68e6;
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
-  .step1boxMobil,
+  .step1boxMobile,
   .step2boxMobile,
-  .step3boxMobile,
-  .step4boxMobile {
-    width: 95vw;
+  .step3boxMobile .step4boxMobile {
+    width: 45vw;
     height: auto;
   }
   .topLeftMobile {
-    width: 50vw;
+    width: 23vw;
     height: 10vh;
   }
   .topRightMobile {
-    width: 50vw;
+    width: 22vw;
     height: auto;
   }
   .stepparaMobile {
-    width: 95vw;
+    width: 45vw;
     height: auto;
   }
   .stepparaMobile .fa-solid {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .stepNameMobile {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .stepparaMobile p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .step1boxMobile,
   .step2boxMobile,
-  .step3boxMobile,
-  .step4boxMobile {
-    width: 95vw;
+  .step3boxMobile .step4boxMobile {
+    width: 45vw;
     height: auto;
   }
   .topLeftMobile {
-    width: 50vw;
+    width: 23vw;
     height: 10vh;
   }
   .topRightMobile {
-    width: 50vw;
+    width: 22vw;
     height: auto;
   }
   .stepparaMobile {
-    width: 95vw;
+    width: 45vw;
     height: auto;
   }
   .stepparaMobile .fa-solid {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .stepNameMobile {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   .stepparaMobile p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 576px) {
