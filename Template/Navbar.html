@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="./Assets/orangeLogo.png" />
+  <link rel="apple-touch-icon" href="./Assets/logo.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>VIP Mobile Number | Fancy</title>
+</head>
+
+<body>
+  <div class="DesktopNav">
+  <section style="background: linear-gradient( 40deg, #bf68e6 20%, #9e48cd 51%, #bf68e6 90% );" id="header">
+    <div class="container nav-top p-3">
+      <div class="d-flex justify-content-between align-items-center w-100" style="color:white">
+        <div class="d-flex align-items-center">
+          <div class="icon-wrap-cont">
+            <a href="whatsapp://send/?phone=+91%2077100%2067100&text=Hi!" style="color:white">  <i class="fa-solid fa-phone icon mx-2"></i>+91 77100 67100
+            </a>        
+          </div>
+        </div>
+        <div class="d-flex align-items-center ms-4">
+          <div class="icon-wrap-cont">
+            <a class="text-white" href="./cart.html"><span class="fa-solid fa-cart-shopping me-2"></span>Cart</a>
+          </div>
+           <div class="icon-wrap-cont" style="margin-left: 30px; background-color: white; padding:5px 5px; border-radius: 5px;">
+            <a href="./signup.html" style="font-size:13px; color: #9e48cd; font-weight: bold;"><span class="fa-solid fa-user me-2"></span>Login / Signup</a>
+          </div>
+          <div class="d-flex align-items-center ms-4">
+            <div>Follow</div>
+            <div class="d-flex align-items-center ms-3">
+              <a href="https://www.facebook.com/ViP-Number-Club-633811640408412/" style="color:white ;"><i class="fa-brands fa-facebook-f"></i></a>
+                 <a href="https://twitter.com/VipNumberClub?t=kisV3II8-mVLAmLC68jfyw&s=08" style="color:white ;"><i class="fa-brands fa-twitter px-3"></i></a>
+            <a href="https://www.instagram.com/vipnumberclub/" style="color:white ;"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/add/vipnumberclub?share_id=wj4CI44_FvE&locale=en-IN" style="color:white ;"><i class="fa-brands fa-snapchat px-3"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <header>
+    <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;">
+      <div class="container-fluid px-2" data-aos="fade-right" style="padding:10px 10px;">
+        <a class="navbar-brand ms-3" href="./index3.html">
+          <div><img src="Assests/vipnumlogore.png" style="height:50px; width:auto"></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <form class="form-inline my-2 my-lg-0 mx-auto d-flex">
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Anywhere</option>
+              <option>Sum Total</option>
+              <option value="1">Starts with</option>
+              <option value="2">Ends with</option>
+              <option value="2">Contains with</option>
+              <option value="2">Not Contains</option>
+            </select>
+
+
+            <input class="form-control mr-sm-2 " type="search" placeholder="Search number" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"
+                style="color: #bf68e6 !important;"></i></button>
+          </form>
+          <ul class="navbar-nav me-3" data-aos="fade-right">
+            <li class="nav-item d-flex flex-column align-items-center">
+              <a class="nav-link" href="./index3.html"><i class="fa-solid fa-house me-1"></i>Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./vipNumber.html"><i class="fa-solid fa-store me-1"></i>Store</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./offer.html"><i class="fa-solid fa-sack-dollar me-1"></i>Offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Wishlist.html"><i class="fa-solid fa-heart me-1"></i>Wishlist</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./contactUs.html"><i class="fa-solid fa-phone me-1"></i>Contact</a>
+            </li>
+             <li class="nav-item d-flex flex-column align-items-center">
+              <a class="nav-link" href="./About.html"><i class="fa-solid fa-id-badge me-1"></i>About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./signup.html"><i class="fa-solid fa-user me-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000
+    }
+    );
+     window.addEventListener("scroll", function () {
+      let nav = document.getElementById("navbar-top");
+      if (window.pageYOffset == 0) {
+        nav.classList.remove("fixed-top");
+        nav.style.boxShadow = "none";
+      }
+      if (window.pageYOffset > 0) {
+        nav.classList.add("fixed-top");
+        nav.style.boxShadow = "0 8px 6px -6px black";
+      }
+    })
+  </script>
+</body>
+
+</html>
