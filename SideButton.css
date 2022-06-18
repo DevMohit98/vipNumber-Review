@@ -31,6 +31,7 @@
   background-color: #fff;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: absolute;
 }
 .box .fa-solid,
 .boxMobile .fa-solid,
@@ -42,38 +43,37 @@
 }
 .box .btn-primary,
 .boxMobile .btn-primary {
-  background-color: #fff !important;
+  background-color: #bf68e6 !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #bf68e6;
-  border-left: none !important;
-  border-right: none !important;
-  border-top: none !important;
-  border-radius: 0px !important;
+  border: none !important;
 }
 .box .btn,
 .boxMobile .btn {
   font-family: "Poppins", sans-serif;
-  color: #bf68e6;
-}
-.box .btn-primary:hover,
-.boxMobile .btn-primary:hover {
-  border-bottom: 2px solid #bf68e6;
-}
-.box .btn:hover,
-.boxMobile .btn:hover {
-  color: #bf68e6;
+  color: #fafafa;
 }
 .box .btn-primary:focus,
 .boxMobile .btn-primary:focus {
   box-shadow: none !important;
-  color: #bf68e6;
+  color: #fafafa;
 }
 
 .box .btn-primary .fa-solid,
 .boxMobile .btn-primary .fa-solid {
-  color: #bf68e6;
+  color: #fafafa;
+}
+.closeDesktop {
+  position: relative;
+  bottom: 7vh;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .faqSection,
 .faqSectionMobile {
@@ -110,6 +110,14 @@
 .faqSectionMobile .accordion-body {
   font-size: 0.8rem !important;
   font-family: "Poppins", sans-serif;
+}
+.myfaq {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 992px) {
   .boxMobile {

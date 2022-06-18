@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div class="d-none d-lg-block">
+      <section class="mt-3">
+        <div class="container">
+          <div class="row cart-row g-3"></div>
+        </div>
+      </section>
+    </div>
+    <div class="d-block d-lg-none">
+      <section class="mt-3">
+        <div class="container">
+          <div class="row cart-row-sm g-3"></div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const Data = [
+        {
+          img: "/Assests/paymentDemo2.jpeg",
+          name: "boAt Stone 135 Bluetooth Speaker (black)",
+          price: 2699,
+          MRP: 6499,
+          dis: 69,
+        },
+        {
+          img: "/Assests/paymentDemo3.jpeg",
+          name: "boAt Stone 135 Bluetooth Speaker (blue)",
+          price: 2699,
+          MRP: 6499,
+          dis: 69,
+        },
+        {
+          img: "/Assests/paymentDemo4.jpeg",
+          name: "boAt Stone 135 Bluetooth Speaker (green)",
+          price: 2699,
+          MRP: 6499,
+          dis: 69,
+        },
+        {
+          img: "/Assests/paymentDemo5.jpeg",
+          name: "boAt Stone 135 Bluetooth Speaker (white)",
+          price: 2699,
+          MRP: 6499,
+          dis: 69,
+        },
+        {
+          img: "/Assests/paymentDemo7.jpg",
+          name: "9H Flexible Clear Screen Protector for All Mobile",
+          price: 1639,
+          MRP: 2499,
+          dis: 49,
+        },
+        {
+          img: "/Assests/paymentDemo8.jpg",
+          name: "Type C Cable Quick Charge USB-C",
+          price: 800,
+          MRP: 1600,
+          dis: 50,
+        },
+        {
+          img: "/Assests/paymentDemo9.jpg",
+          name: "Multi color Mobile Stand (Pack of 2)",
+          price: 500,
+          MRP: 1000,
+          dis: 59,
+        },
+        {
+          img: "/Assests/paymentDemo10.jpg",
+          name: "Type C Usb cable (Pack of 2)",
+          price: 750,
+          MRP: 1450,
+          dis: 59,
+        },
+        {
+          img: "/Assests/payement11.jpg",
+          name: "Mobile Holder & 8bg Pendrive",
+          price: 990,
+          MRP: 1000,
+          dis: 10,
+        },
+        {
+          img: "/Assests/payement12.jpg",
+          name: "One Plus Dash Charger 65W",
+          price: 990,
+          MRP: 1000,
+          dis: 10,
+        },
+        {
+          img: "/Assests/payement13.jpg",
+          name: "8000 mah powerbank",
+          price: 990,
+          MRP: 1000,
+          dis: 10,
+        },
+        {
+          img: "/Assests/payement14.jpg",
+          name: "Multi port socket",
+          price: 600,
+          MRP: 1200,
+          dis: 50,
+        },
+        {
+          img: "/Assests/payement15.jpg",
+          name: "JBL Portable speaker (Small)",
+          price: 1200,
+          MRP: 1300,
+          dis: 10,
+        },
+        {
+          img: "/Assests/payement16.jpg",
+          name: "JBL Speaker 60 VW",
+          price: 990,
+          MRP: 1000,
+          dis: 10,
+        },
+        {
+          img: "/Assests/payement17.jpg",
+          name: "JBL Mini Bar",
+          price: 850,
+          MRP: 1000,
+          dis: 15,
+        },
+        {
+          img: "/Assests/payement18.jpg",
+          name: "JBL Spearker 120 w",
+          price: 999,
+          MRP: 1000,
+          dis: 1,
+        },
+        {
+          img: "/Assests/payement19.jpg",
+          name: "AUX to USB Converter",
+          price: 500,
+          MRP: 700,
+          dis: 20,
+        },
+        {
+          img: "/Assests/payement20.jpg",
+          name: "Fan with usb",
+          price: 600,
+          MRP: 1000,
+          dis: 30,
+        },
+        {
+          img: "/Assests/payement21.jpg",
+          name: "Sony wireless headset",
+          price: 1250,
+          MRP: 2500,
+          dis: 35,
+        },
+        {
+          img: "/Assests/payement22.jpg",
+          name: "One Plus ear Buds",
+          price: 1200,
+          MRP: 2500,
+          dis: 30,
+        },
+        {
+          img: "/Assests/paymentDemo1.jpeg",
+          name: "boAt Stone 1450 40 W Bluetooth Speaker",
+          price: 1699,
+          MRP: 5499,
+          dis: 69,
+        },
+      ];
+      let cart = document.querySelector(".cart-row");
+      let cartM = document.querySelector(".cart-row-sm");
+      let newData = Data.map((items) => {
+        const { name, price, MRP, dis, img } = items;
+        return `<div class="col-xl-4 col-lg-4">
+            <div class="cart p-3">
+              <div class="d-flex justify-content-center">
+                 <img src=${img} />
+                </div>
+       
+        <div class="d-flex flex-row mt-2">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="mt-3">${name}</p>
+        <h2 class="mt-2">
+          ₹${price}
+          <span style="font-size: 12px; text-decoration: line-through"
+            >(₹${MRP})</span
+          >
+          <span style="font-size: 14px">(${dis}% off)</span>
+        </h2>
+      </div>
+            </div>`;
+      });
+      newData = newData.join("");
+      cart.innerHTML = newData;
+      let MobData = Data.map((items) => {
+        const { name, price, MRP, dis, img } = items;
+        return `<div class="col-12 col-sm-6 col-md-4">
+            <div class="cart p-3">
+              <div class="d-flex justify-content-center">
+                 <img src=${img} />
+                </div>
+       
+        <div class="d-flex flex-row mt-2">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="mt-3">${name}</p>
+        <h2 class="mt-2">
+          ₹${price}
+          <span style="font-size: 12px; text-decoration: line-through"
+            >(₹${MRP})</span
+          >
+          <span style="font-size: 14px">(${dis}% off)</span>
+        </h2>
+      </div>
+            </div>`;
+      });
+      MobData = MobData.join("");
+      cartM.innerHTML = MobData;
+    </script>
+  </body>
+</html>
